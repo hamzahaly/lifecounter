@@ -50,22 +50,23 @@
                 android:layout_height="wrap_content"
                 android:text="+"
                 android:id="@+id/plus_one"
-                android:onClick="plusOne"/>
+                android:onClick="modifyLife"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+5"
                 android:id="@+id/plus_five"
-                android:onClick="plusFive"/>
+                android:onClick="modifyLife"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="20"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:id="@+id/player_1_life"/>
+                android:id="@+id/player_1_life"
+                android:tag="player_1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -76,13 +77,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:id="@+id/sub_one"/>
+                android:id="@+id/sub_one"
+                android:onClick="modifyLife"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-5"
-                android:id="@+id/sub_five"/>
+                android:id="@+id/sub_five"
+                android:onClick="modifyLife"/>
 
         </LinearLayout>
 
@@ -123,7 +126,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="20"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/player_2_life"
+                android:tag="player_2"/>
 
         </LinearLayout>
 
@@ -180,7 +187,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="20"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/player_3_life"
+                android:tag="player_3"/>
 
         </LinearLayout>
 
@@ -237,7 +248,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="20"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/player_4_life"
+                android:tag="player_4"/>
 
         </LinearLayout>
 

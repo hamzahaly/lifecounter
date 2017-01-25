@@ -11,6 +11,11 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="lifecounter.hamzaha.washington.edu.lifecounter.MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -299,5 +304,13 @@
                 android:tag="player_4"/>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/loss_text"/>
     </LinearLayout>
+
+    </ScrollView>
 </RelativeLayout>

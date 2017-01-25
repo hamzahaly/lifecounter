@@ -44,16 +44,16 @@ public class MainActivity extends Activity {
                     text.setText("" + counter);
                 } else if (tag.equals("player_2")) {
                     TextView text = (TextView) findViewById(R.id.player_2_life);
-                    counter++;
-                    text.setText("" + counter);
+                    counter2++;
+                    text.setText("" + counter2);
                 } else if (tag.equals("player_3")) {
                     TextView text = (TextView) findViewById(R.id.player_3_life);
-                    counter++;
-                    text.setText("" + counter);
+                    counter3++;
+                    text.setText("" + counter3);
                 } else {
                     TextView text = (TextView) findViewById(R.id.player_4_life);
-                    counter++;
-                    text.setText("" + counter);
+                    counter4++;
+                    text.setText("" + counter4);
                 }
                 break;
             case "+5" :
@@ -64,16 +64,16 @@ public class MainActivity extends Activity {
                     text.setText("" + counter);
                 } else if (tag.equals("player_2")) {
                     TextView text = (TextView) findViewById(R.id.player_2_life);
-                    counter = counter + 5;
-                    text.setText("" + counter);
+                    counter2 = counter2 + 5;
+                    text.setText("" + counter3);
                 } else if (tag.equals("player_3")) {
                     TextView text = (TextView) findViewById(R.id.player_3_life);
-                    counter = counter + 5;
-                    text.setText("" + counter);
+                    counter3 = counter3 + 5;
+                    text.setText("" + counter3);
                 } else {
                     TextView text = (TextView) findViewById(R.id.player_4_life);
-                    counter = counter + 5;
-                    text.setText("" + counter);
+                    counter4 = counter4 + 5;
+                    text.setText("" + counter4);
                 }
                 break;
             case "-" :
@@ -84,16 +84,16 @@ public class MainActivity extends Activity {
                     text.setText("" + counter);
                 } else if (tag.equals("player_2")) {
                     TextView text = (TextView) findViewById(R.id.player_2_life);
-                    counter--;
-                    text.setText("" + counter);
+                    counter2--;
+                    text.setText("" + counter2);
                 } else if (tag.equals("player_3")) {
                     TextView text = (TextView) findViewById(R.id.player_3_life);
-                    counter--;
-                    text.setText("" + counter);
+                    counter3--;
+                    text.setText("" + counter3);
                 } else {
                     TextView text = (TextView) findViewById(R.id.player_4_life);
-                    counter--;
-                    text.setText("" + counter);
+                    counter4--;
+                    text.setText("" + counter4);
                 }
                 break;
             case "-5" :
@@ -104,21 +104,35 @@ public class MainActivity extends Activity {
                     text.setText("" + counter);
                 } else if (tag.equals("player_2")) {
                     TextView text = (TextView) findViewById(R.id.player_2_life);
-                    counter = counter - 5;
-                    text.setText("" + counter);
+                    counter2 = counter2 - 5;
+                    text.setText("" + counter2);
 
                 } else if (tag.equals("player_3")) {
                     TextView text = (TextView) findViewById(R.id.player_3_life);
-                    counter = counter - 5;
-                    text.setText("" + counter);
+                    counter3 = counter3 - 5;
+                    text.setText("" + counter3);
                 } else {
                     TextView text = (TextView) findViewById(R.id.player_4_life);
-                    counter = counter - 5;
-                    text.setText("" + counter);
+                    counter4 = counter4 - 5;
+                    text.setText("" + counter4);
                 }
                 break;
             default :
                 Log.v(TAG, "DEFAULT SHOULD NEVER HAPPEN");
+        }
+
+        if (counter <= 0) {
+            TextView text = (TextView) findViewById(R.id.loss_text);
+            text.setText("player 1 has lost!");
+        } else if (counter2 <= 0) {
+            TextView text = (TextView) findViewById(R.id.loss_text);
+            text.setText("player 2 has lost!");
+        } else if (counter3 <= 0) {
+            TextView text = (TextView) findViewById(R.id.loss_text);
+            text.setText("player 3 has lost!");
+        } else if (counter4 <= 0) {
+            TextView text = (TextView) findViewById(R.id.loss_text);
+            text.setText("player 4 has lost!");
         }
 
     }

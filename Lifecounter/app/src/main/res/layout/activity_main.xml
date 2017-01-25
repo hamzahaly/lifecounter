@@ -50,14 +50,16 @@
                 android:layout_height="wrap_content"
                 android:text="+"
                 android:id="@+id/plus_one"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_1"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+5"
                 android:id="@+id/plus_five"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_1"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,14 +80,16 @@
                 android:layout_height="wrap_content"
                 android:text="-"
                 android:id="@+id/sub_one"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_1"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-5"
                 android:id="@+id/sub_five"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_1"/>
 
         </LinearLayout>
 
@@ -117,13 +121,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_2"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+5"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_2"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -144,13 +150,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_2"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-5"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_2"/>
 
         </LinearLayout>
 
@@ -182,13 +190,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_3"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+5"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_3"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -209,13 +219,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_3"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-5"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_3"/>
 
         </LinearLayout>
 
@@ -247,13 +259,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_4"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+5"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_4"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -274,13 +288,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_4"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-5"
-                android:onClick="modifyLife"/>
+                android:onClick="modifyLife"
+                android:tag="player_4"/>
 
         </LinearLayout>
     </LinearLayout>

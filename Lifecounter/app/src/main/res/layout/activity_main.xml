@@ -39,20 +39,33 @@
 
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+"/>
+                android:text="+"
+                android:id="@+id/plus_one"
+                android:onClick="plusOne"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+5"/>
+                android:text="+5"
+                android:id="@+id/plus_five"
+                android:onClick="plusFive"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:id="@+id/player_1_life"/>
         </LinearLayout>
 
         <LinearLayout
@@ -62,12 +75,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-"/>
+                android:text="-"
+                android:id="@+id/sub_one"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-5"/>
+                android:text="-5"
+                android:id="@+id/sub_five"/>
 
         </LinearLayout>
 
@@ -104,6 +119,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
 
         </LinearLayout>
 
@@ -157,6 +177,11 @@
                 android:layout_height="wrap_content"
                 android:text="+5"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -208,6 +233,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
 
         </LinearLayout>
 
